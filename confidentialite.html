@@ -36,6 +36,13 @@
   <h2>Partage</h2>
   <p>Aucune donnée d'utilisateur Google n'est vendue, partagée ni transmise à des tiers, ni utilisée pour de la publicité. Les clips d'origine proviennent de Twitch, où ils sont publics. Pour choisir les clips et rédiger les textes, leur contenu (transcription et quelques images) est envoyé à l'API Claude d'Anthropic. Ce contenu ne contient aucune donnée d'utilisateur Google.</p>
 
+  <h2>Suppression des données</h2>
+  <ul>
+    <li>Les copies de travail des vidéos sont supprimées automatiquement au bout de 7 jours.</li>
+    <li>Après révocation de l'accès (voir ci-dessous), le propriétaire supprime le jeton des secrets du dépôt GitHub. Aucune autre donnée Google n'est conservée.</li>
+    <li>Sur simple demande à l'adresse de contact, toute donnée conservée est supprimée sous 7 jours. Les vidéos publiées peuvent être supprimées à tout moment depuis YouTube Studio.</li>
+  </ul>
+
   <h2>Révoquer l'accès</h2>
   <p>Le propriétaire du compte peut retirer l'accès de Clipper à tout moment depuis la <a href="https://security.google.com/settings/security/permissions">page des autorisations de son compte Google</a>. Le jeton conservé devient alors inutilisable.</p>
 
@@ -50,6 +57,7 @@
       <li><strong>Data accessed.</strong> Only the channel owner signs in. Clipper requests a single scope, <code>youtube.upload</code>, to upload videos with their title, description and thumbnail. It accesses no other Google account data and no data about viewers or other users.</li>
       <li><strong>Data stored.</strong> The OAuth token is stored encrypted as a secret in a private GitHub repository and is only used to upload videos. Rendered videos are kept for 7 days in that private repository, then deleted. No cookies are used, by Clipper or by this website.</li>
       <li><strong>Sharing.</strong> No Google user data is sold, shared with or transferred to third parties, or used for advertising. Clip content (transcripts and a few frames of public Twitch clips, no Google user data) is sent to Anthropic's Claude API to select clips and write titles.</li>
+      <li><strong>Data deletion.</strong> Working copies of videos are deleted automatically after 7 days. After access is revoked, the owner deletes the token from the GitHub repository secrets; no other Google data is stored. On request to the contact address, any stored data is deleted within 7 days. Published videos can be deleted at any time from YouTube Studio.</li>
       <li><strong>Revoking access.</strong> The account owner can revoke Clipper's access at any time from the <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>.</li>
       <li><strong>Contact.</strong> <a href="mailto:jdeclip2024@gmail.com">jdeclip2024@gmail.com</a></li>
     </ul>

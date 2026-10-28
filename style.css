@@ -39,6 +39,9 @@ a { color: inherit; text-decoration-thickness: 0.12em; text-underline-offset: 0.
 nav ul { list-style: none; padding: 0; margin: 1.2rem 0 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
 nav a { display: inline-block; padding: 0.35rem 0.7rem; border: 1px solid var(--line); border-radius: 6px; background: var(--paper); text-decoration: none; }
 nav a:hover { border-color: var(--muted); }
+nav a, h2.with-icon { display: inline-flex; align-items: center; gap: 0.5rem; }
+.yt { flex: none; }
+.legal { font-size: 0.95rem; }
 section.en { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1rem; }
 .updated, footer { color: var(--muted); font-size: 0.9rem; }
 footer { margin-top: 3rem; border-top: 1px solid var(--line); padding-top: 1rem; }
